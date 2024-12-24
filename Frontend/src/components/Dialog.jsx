@@ -75,7 +75,7 @@ const DialogBox = ({ value, title, type, id }) => {
     return (
         <Dialog>
             <DialogTrigger onClick={() => setCourses([])}>
-                <Button className = "px-3 dark:bg-[#0D1117] dark:border-neutral-800 dark:border-[1px] hover:dark:bg-[#010409] hover:text-white" variant="secondary">
+                <Button className = "px-3 dark:bg-[#0D1117] hover:bg-gray-500 hover:text-white dark:border-neutral-800 dark:border-[1px] hover:dark:bg-[#010409]" variant="secondary">
                     {type === "Add" && <LuPlus className="font-bold text-xl" />}
                     {value}
                 </Button>

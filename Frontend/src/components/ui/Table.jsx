@@ -158,7 +158,6 @@ const Table = () => {
             dateJoined: formatDate(student.dateJoined),
             lastLogin: formatDate(student.lastLogin, true),
         }));
-
         createTheme("dark", {
             background: {
                 default: "transparent",
@@ -169,7 +168,7 @@ const Table = () => {
     return (
         <DataTable
             columns={columns}
-            className="text-sm dark:bg-[#0D1117] dark:text-white"
+            className="text-sm dark:bg-[#0D1117] dark:text-white !important"
             data={formattedStudents}
             pagination
             theme={currTheme === "dark" ? "dark" : ""}
