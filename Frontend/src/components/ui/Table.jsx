@@ -169,7 +169,7 @@ const Table = () => {
     return (
         <DataTable
             columns={columns}
-            className="text-sm dark:bg-[#0D1117] dark:text-white !important"
+            className="text-sm dark:bg-[#0D1117] dark:text-white"
             data={formattedStudents}
             pagination
             theme={currTheme === "dark" ? "dark" : ""}
