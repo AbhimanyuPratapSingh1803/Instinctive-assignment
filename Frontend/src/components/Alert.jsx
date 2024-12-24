@@ -44,7 +44,7 @@ const Alert = (data) => {
     return (
         <AlertDialog>
             <AlertDialogTrigger className="px-3 py-2 text-red-500 dark:bg-[#222831] dark:hover:bg-red-500 text-xl hover:bg-red-500 hover:text-white transition-colors rounded-md bg-slate-200" onClick={() => setId(data.data.id)}><RiDeleteBin2Line /></AlertDialogTrigger>
-            <AlertDialogContent className = "dark:bg-[#222831] ">
+            <AlertDialogContent className = "dark:bg-[#222831] rounded-xl">
                 <AlertDialogHeader>
                     <AlertDialogTitle>
                         Are you sure you want to Delete?
@@ -55,10 +55,10 @@ const Alert = (data) => {
                         servers.
                     </AlertDialogDescription>
                 </AlertDialogHeader>
-                <AlertDialogFooter>
-                    <AlertDialogCancel>Cancel</AlertDialogCancel>
+                <AlertDialogFooter className="sm:flex-row flex-col-reverse">
+                    <AlertDialogCancel className="flex justify-center">Cancel</AlertDialogCancel>
                     <div onClick={remove}>
-                        <AlertDialogAction className="bg-red-500 text-white hover:bg-red-700 hover:text-white" >Continue</AlertDialogAction>
+                        <AlertDialogAction className="bg-red-500 flex justify-center text-white hover:bg-red-700 w-full hover:text-white" >Continue</AlertDialogAction>
                     </div>
                 </AlertDialogFooter>
             </AlertDialogContent>
