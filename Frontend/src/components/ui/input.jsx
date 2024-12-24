@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 
 const Input = React.forwardRef(({ className, type, ...props }, ref) => {
     return (
-        <div className="flex dark:bg-[#0D1117] items-center gap-3 h-full w-full bg-white dark:outline-black rounded-xl border outline-none ring-0 dark:text-white bg-transparent text-base shadow-sm transition-colors">
+        <div className="flex dark:bg-[#0D1117] items-center gap-[5px] sm:gap-3 h-full w-full bg-white dark:outline-black rounded-xl border outline-none ring-0 dark:text-white bg-transparent text-base shadow-sm transition-colors">
             <IoIosSearch className="ml-3 sm:ml-5 dark:text-white" />
             <input
                 type={type}
