@@ -21,7 +21,7 @@ const Sidebar = () => {
     return (
         <div className={`w-full sm:w-1/5 bg-white ${isHidden ? "hidden" : "flex"} dark:bg-[#0D1117] dark:text-white drop-shadow-lg flex flex-col gap-8 py-5 pl-5`}>
             <div className='flex items-center justify-between w-full'>
-                <img src="src\assets\Vector.svg" alt="" className='h-11 w-24 dark:bg-white rounded-md pr-2 cursor-pointer'/>
+                <img src="Vector.svg" alt="" className='h-11 w-24 dark:bg-white rounded-md pr-2 cursor-pointer'/>
                 <Button onClick = {() => dispatch(hideSidebar())} className = "text-xl font-bold mr-4">
                     <RxCross2 />
                 </Button>
